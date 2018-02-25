@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coco", "Coco\Coco.csproj", "{646FA3BC-A11F-4558-95CF-7D6D14E4A526}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{646FA3BC-A11F-4558-95CF-7D6D14E4A526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646FA3BC-A11F-4558-95CF-7D6D14E4A526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646FA3BC-A11F-4558-95CF-7D6D14E4A526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646FA3BC-A11F-4558-95CF-7D6D14E4A526}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A2EC2BC-E80D-41C1-B978-AB3C20CA5F8D}
+	EndGlobalSection
+EndGlobal
