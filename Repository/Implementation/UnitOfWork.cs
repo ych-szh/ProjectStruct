@@ -9,6 +9,23 @@ namespace Repository.Implementation
 {
     public class UnitOfWork<TContext> : IUnitOfWork where TContext : ApplicationDbContext
     {
+        private ApplicationDbContext DbContext { get; }
+
+        private bool _disposed;
+
+        private void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    DbContext.Dispose();
+                }
+            }
+
+            _disposed = true;
+        }
+
         public UnitOfWork(TContext context)
         {
             DbContext = context ?? throw new ArgumentException(nameof(context));
@@ -40,23 +57,6 @@ namespace Repository.Implementation
         {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
-
-        private ApplicationDbContext DbContext { get; }
-
-        private bool _disposed;
-
-        private void Dispose(bool disposing)
-        {
-            if (!_disposed)
-            {
-                if (disposing)
-                {
-                    DbContext.Dispose();
-                }
-            }
-
-            _disposed = true;
         }
     }
 }
